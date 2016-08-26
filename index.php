@@ -12,16 +12,19 @@ include "functions.php";
 
     <title>Document</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js"></script>
+
   </head>
 
   <body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.2.0/js/tether.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js"></script>
+    
     <script>
-      var display_stock = "yhoo"; // stock displayed in top blue box that is selected from the table
+      var display_stock = <?php echo '"'. getFirstStock() .'"' ; ?>; // stock displayed in top blue box that is selected from the table
       // this variable has a global scope because it is defined outside of
       // any function. So it can be accessed in any file like it is in display_stocks.php
-      var refreshRate = 3000;
+      var refreshRate = 1000;
       var dash; // both variables are declared outside document.ready so they can be accessed in display_stocks.php
       var table; // this is so that updates(setIntervals) are turned off for selling stocks and turned on afterward
 
@@ -364,7 +367,7 @@ padding: 0px;
             <h2 id='account_net_worth'></h2>
           </div>
           <div class="card-footer text-muted">
-            3 days ago
+            3 minutes ago
           </div>
         </div>
       </div>
@@ -380,7 +383,7 @@ padding: 0px;
             <h2 class="card-text" id='stock_price'></h2>
           </div>
           <div class="card-footer text-muted">
-            2 days ago
+            2 minutes ago
           </div>
         </div>
       </div>

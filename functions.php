@@ -175,5 +175,20 @@ function sellStock($ticker,$number,$cost){
     
 }
 
+function getFirstStock() {
+    global $connection;
+    $query = "SELECT * FROM portfolio";
+    
+    
+    $result = mysqli_query($connection, $query); //making it a variable to check if it works
+    
+    if(!$result){
+        die('Query Failed' . mysqli_error($connection));
+    }
+    $row = mysqli_fetch_assoc($result);
+    return $row['stock'];
+
+}
+
 
 ?>
