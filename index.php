@@ -24,7 +24,7 @@ include "functions.php";
       var display_stock = <?php echo '"'. getFirstStock() .'"' ; ?>; // stock displayed in top blue box that is selected from the table
       // this variable has a global scope because it is defined outside of
       // any function. So it can be accessed in any file like it is in display_stocks.php
-      var refreshRate = 1000;
+      var refreshRate = 3000;
       var dash; // both variables are declared outside document.ready so they can be accessed in display_stocks.php
       var table; // this is so that updates(setIntervals) are turned off for selling stocks and turned on afterward
 
