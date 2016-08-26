@@ -10,7 +10,7 @@ include "functions.php";
   <head>
     <meta charset="UTF=8">
 
-    <title>Document</title>
+    <title>Stock Market Simulator</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css">
 
   </head>
@@ -351,6 +351,7 @@ padding: 0px;
     <!-- /.modal -->
 
     <h1 class="text-sm-center"> Stock Market </h1>
+    <p style="text-align: center;"> Takes a Few Moments to Load ...</p>
     <br>
     <br>
 
