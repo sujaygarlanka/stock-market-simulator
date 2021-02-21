@@ -1,2 +1,2 @@
-# Stock Market Simulator (Live)
+# Stock Market Simulator
 A stock market simulator
